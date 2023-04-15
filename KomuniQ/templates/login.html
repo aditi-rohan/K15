@@ -1,0 +1,37 @@
+{% extends "index.html" %}
+{% block title %}Acceder a Cuenta{% endblock %}
+
+{% block content %}
+    <!--CONTENT BEGINS-->
+    <section class="u-align-center u-clearfix u-container-align-center u-custom-color-1 u-section-1" id="sec-f26e" style="padding-bottom: 70px;">
+        <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+            <div class="u-container-style u-expanded-width-xs u-group u-radius-50 u-shape-round u-white u-group-1" >
+                <div class="u-container-layout u-container-layout-1 u-align-center" >
+                    <img class="u-image u-image-contain u-image-round u-preserve-proportions u-radius-10 u-image-1" src="{{ url_for('static', filename='images/icon.jpg') }}" alt="" data-image-width="500" data-image-height="500" >
+                    <h2 class="u-align-center u-text u-text-custom-color-1 u-text-default u-text-1">Acceder a Cuenta </h2>
+                    <div class="u-form u-password-control u-form-1">
+                        <form action="#" class="u-clearfix u-form-custom-backend u-form-spacing-15 u-form-vertical u-inner-form" source="custom" name="form" style="padding: 10px;" method="post">
+                        <div class="u-align-center u-form-group u-form-password u-label-none u-form-group-1">
+                            <label for="text-3e62" class="u-label">Correo Electronico</label>
+                            <input type="text" placeholder="Correo Electronico" id="text-3e62" name="text" class="u-border-grey-10 u-input u-input-rectangle u-radius-50 u-input-1" maxlength="100">
+                        </div>
+                        <div class="u-align-center u-form-group u-form-password u-label-none">
+                            <label for="password-4c82" class="u-form-control-hidden u-label">Contrasena</label>
+                            <input type="password" placeholder="Contrasena" id="password-4c82" name="password" class="u-border-grey-10 u-input u-input-rectangle u-radius-50 u-input-2" autofocus="autofocus" required="" maxlength="50">
+                        </div>
+                        <div class="u-align-left u-form-group u-form-submit u-label-none">
+                            <!--LOGIN BUTTON-->
+                            <input type="submit" value="Login" class="u-form-control-hidden">
+                            <!--ERROR MESSAGE IF EMAIL OR PASSWORD IS INCORRECT-->
+                            <div class="u-form-send-error u-form-send-message">Nombre de usuario o contrasena esta incorrecto</div>
+<!--ADD login link-->           <a href="#" class="u-border-none u-btn u-btn-round u-btn-submit u-button-style u-hover-custom-color-1 u-palette-3-base u-radius-50 u-text-custom-color-1 u-text-hover-palette-3-base u-btn-1">Login</a>
+                            </div>
+                            <input type="hidden" value="" name="recaptchaResponse">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--CONTENT ENDS-->
+{% endblock %}
